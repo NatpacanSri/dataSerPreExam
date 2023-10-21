@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>resume</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body class="bg-gray-900">
+    <% include partials/nav %>
+        <div class="items-center mt-8 px-4 mx-auto max-w-screen-xl">
+            <h1 class="headtitle">My Resume</h1>
+        </div>
+        <div class="bg-gray-900 dark:bg-gray-900 h-screen">
+            <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                <div class="grid gap-4 ">
+                    <div
+                        class="w-full max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <div class="flex flex-col items-center py-10">
+                            <img class="w-36 h-36 mb-3 rounded-full shadow-lg object-cover" src="/images/me2.JPG" alt="Natpacan" />
+                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+                                <%= port.name %>
+                            </h5>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Frontend Developer</span>
+                            <!-- <div class="flex mt-4 space-x-3 md:mt-6">
+                                <a href="<%= port.contact.linkedin %>"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    LinkedIn</a>
+                                <a href="mailto:<%= port.contact.email %>"
+                                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">
+                                    <%= port.contact.email %>
+                                </a>
+                            </div> -->
+                                <a href="mailto:<%= port.contact.email %>"
+                                    class="mt-4 inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">
+                                    <%= port.contact.email %>
+                                </a>
+                                <p class="mt-4 items-center px-4 text-sm font-medium text-center text-white">(TH:+66) 093-374-1160</p>
+                                <p class="mt-4 items-center px-4 text-sm font-medium text-center text-white">Khonkaen University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        CAREER OBJECTIVE
+                    </h2>
+                    <p>
+                        As a graduate in Information Technology. I'm seeking to be a full-time frontend developer. I aim to apply my knowledge and abilities to be a master frontend developer. And I am committed to diligently honing my skills, developing my abilities, and actively seeking new knowledge through continuous learning.
+                    </p>
+                </div>
+            </div>
+            <div class="items-center py-8 px-4 mx-auto max-w-screen-xl">
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Project Experience
+                    </h2>
+                    <hr class="my-4">
+                    <ul class="text-gray-500 list-inside dark:text-gray-400">
+                        <li class="flex items-center">
+                            <svg class="mb-auto mt-2 w-3.5 h-3.5 mr-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                            </svg>
+                            <div>
+                                <h2 class="font-bold">Mentor diamond web: <span class="font-light">Thesis & Research methodology project</span></h2>
+                                <p>(Jun. 2023 - Present)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0 mb-auto mt-2"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg>
+                            <div>
+                                <h2 class="font-bold">Rotten Potato app: <span class="font-light">Mobile Web Application Development</span></h2>
+                                <p>(Dec. 2022 - Mar. 2023)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0 mb-auto mt-2"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                            </svg>
+                            <div>
+                                <h2 class="font-bold">Turtle Typing web: <span class="font-light">Web Application Programming & Database Analysis and Design</span></h2>
+                                <p>(Aug. 2022 - Oct. 2022)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="items-center py-8 px-4 mx-auto max-w-screen-xl">
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class=" mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Education
+                    </h2>
+                    <hr>
+                    <h2 class="font-bold mt-4">Udonpichairakpittaya School</h2>
+                    <p>Graduated in May 2020</p> 
+                    <p>Present: <b>Bachelor of Science in Computing and Digital Technologies </b> - Khon Kaen University</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

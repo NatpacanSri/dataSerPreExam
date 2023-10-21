@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>resume</title>
+</head>
+
+<body>
+
+    <% include partials/nav %>
+
+    <section class="bg-white dark:bg-gray-900 h-screen">
+        
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6 ">
+            
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 ">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About me</h2>
+                <p>I am a passmate dedlcated Computing and Dlgtal Technologies student currently pursuing my
+                    bachelor's degree at Khon Kaon University I have a strong interest in web development and
+                    programming</p>
+            </div>
+            <div class="grid gap-4 mt-8 ">
+
+                <div
+                    class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <h2 class="mb-4 text-2xl text-center tracking-tight font-bold text-gray-900 dark:text-white pt-4">Contact Me</h2>
+                    <div class="flex flex-col items-center pb-10">
+                        <img class="w-24 h-24 mb-3 rounded-full shadow-lg"
+                            src="https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-1/272839976_1397895780672433_8417660341678231109_n.jpg?stp=dst-jpg_p160x160&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_eui2=AeF8fGZ5srX5LpqDUJkKXxJez0yVc_IOGDrPTJVz8g4YOnJhb0IqrC2Pb4zXRsqxgSXObHyL6QXB-Hk-1qfhIfha&_nc_ohc=vjwfkH-WojMAX9fvXEY&_nc_ht=scontent-sin6-1.xx&oh=00_AfAgl-QMIedniMAm3sqQ982KutLSj6DnHcgzf7KowSRmUA&oe=6503FF32" alt="Natpacan" />
+                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white"><%= port.name %></h5>
+                        <span class="text-sm text-gray-500 dark:text-gray-400">Frontend Developer</span>
+                        <div class="flex mt-4 space-x-3 md:mt-6">
+                            <a href="<%= port.contact.linkedin %>"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                LinkedIn</a>
+                            <a href="mailto:<%= port.contact.email %>"
+                                class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">
+                                <%= port.contact.email %></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
